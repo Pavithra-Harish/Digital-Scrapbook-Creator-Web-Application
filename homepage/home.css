@@ -1,0 +1,254 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: "Comfortaa", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(169,150,200,1) 65%, rgba(52,9,121,1) 100%);
+    background-repeat:no-repeat;
+}
+
+a {
+    color : white;
+}
+
+.navbar {
+  width: 95%;
+  height: 70px;
+  margin: 10px 3px;
+  background-color: #04010f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  z-index: 1000;
+}
+
+.logo-search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo {
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+#search {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.search-button img {
+  width: 20px;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-grow: 1;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.button-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-container img {
+  width: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.profile-section img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.nav-icons img {
+  width: 30px;
+  filter: none; /* Remove the white override */
+  color: #937EFA; /* Set purple color */
+}
+
+.carousel {
+    overflow: hidden;
+    width: 90%; 
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 5px;
+    box-shadow : #6100ff 0px 5px 15px;
+    
+  }
+  
+  .carousel-track {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    width: calc(300px * 4); 
+  }
+  
+  .carousel-slide {
+    flex: 0 0 300px;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%)
+    }
+  }
+
+.opt-btn-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.opt-btn1, .opt-btn2, .opt-btn3, .opt-btn4{
+    width:5rem;
+    height:5rem;
+    background-size: contain;
+    border-radius: 25%;
+    border : 3px solid #6100ff;
+    padding: 0px 0px;
+    box-shadow: #6100ff 0px 5px 15px;   
+}
+
+.opt-btn1{
+  background-image: url("../assets/WhatsApp\ Image\ 2025-02-15\ at\ 15.22.17_6c25eec4.jpg");
+}
+.opt-btn2{
+    background-image: url("../assets/WhatsApp\ Image\ 2025-02-15\ at\ 15.22.17_67786cc9.jpg");
+}
+.opt-btn3{
+   background-image: url("../assets/WhatsApp\ Image\ 2025-02-15\ at\ 15.22.18_c0548ade.jpg");
+}
+.opt-btn4{
+    background-image: url("../assets/WhatsApp\ Image\ 2025-02-15\ at\ 15.22.18_2290ee92.jpg");
+}
+
+footer {
+  background-color: black;
+  padding: 60px 80px 20px;
+  margin-top: 80px;
+  width: 100%;
+}
+
+footer p{
+  color: white;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: orange;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+  
+@keyframes popIn {
+  0% {
+      transform: scale(0.8);
+      opacity: 0.7; 
+  }
+  50% {
+      transform: scale(1.2); 
+      opacity: 1; 
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.opt-btn1:hover{
+  animation: popIn 0.5s ease-out;
+}
+.opt-btn2:hover{
+  animation: popIn 0.5s ease-out;
+}
+.opt-btn3:hover{
+  animation: popIn 0.5s ease-out;
+}
+.opt-btn4:hover{
+  animation: popIn 0.5s ease-out;
+}

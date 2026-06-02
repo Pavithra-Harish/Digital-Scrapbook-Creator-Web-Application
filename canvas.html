@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Canvas</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><button class="button" id="topSaveButton">SAVE</button></li>
+            <li><button class="button" id="topExportButton">EXPORT</button></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <h1 class="heading">Templates</h1>
+        <p class="redi" onclick="redirect(this)" data-title="MEMORIES">MEMORIES ❤️</p>
+        <p class="redi" onclick="redirect(this)" data-title="STORIES">STORIES 😊</p>
+        <p class="redi" onclick="redirect(this)" data-title="ADVENTURE">ADVENTURE 🚀</p>
+        
+        <h2>Add Elements</h2>
+        <button class="button" onclick="showTextInput()">Add Text</button>
+        <label for="fileInput" class="button2">Add Image</label>
+        <input type="file" accept="image/*" id="fileInput" onchange="addImage(event)">
+        
+        <h2>Select Emoji</h2>
+        <select id="emojiSelector">
+            <option value="😊">😊 Smiley</option>
+            <option value="😂">😂 Laugh</option>
+            <option value="❤️">❤️ Heart</option>
+            <option value="🔥">🔥 Fire</option>
+            <option value="🚀">🚀 Rocket</option>
+            <option value="🎉">🎉 Party</option>
+        </select>
+        <button class="button" onclick="addEmoji()">Add Emoji</button>
+
+        <div id="textInputContainer">
+            <input type="text" id="textInput" placeholder="Enter text here">
+            <button class="button" onclick="addText()">Submit</button>
+        </div>
+
+        <br><button class="button button3" id="sideSaveButton">Save</button>
+        <button class="button button4" id="sideExportButton">Export</button>
+    </div>
+    
+    <div class="canvas" id="canvas"></div>
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
