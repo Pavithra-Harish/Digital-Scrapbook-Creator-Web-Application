@@ -43,9 +43,9 @@ cd digital-scrapbook
 
 ## 📸 Screenshots
 
-![Alt text](/assets/image5%20(1).png)
+![Alt text](/assets/ourteam(1).png)
 ![Alt text](/assets/image5%20(2).png)
-![Alt text](/assets/image5%20(3).png)
+![Alt text](/assets/image5%20(1).png)
 ![Alt text](/assets/image5%20(4).png)
 
 
