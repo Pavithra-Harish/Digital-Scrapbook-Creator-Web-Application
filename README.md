@@ -45,7 +45,7 @@ cd digital-scrapbook
 
 ![Our Team](assets/our%20team.png)
 ![Alt text](/assets/image5%20(2).png)
-![Alt text](/assets/image5%20(1).png)
+![Screenshot](assets/screenshot1.png)
 ![Alt text](/assets/image5%20(4).png)
 
 
