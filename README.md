@@ -1,68 +1,75 @@
-# 📖 Digital Scrapbook App
+# 📖 Digital Scrapbook Creator
 
-[Website](https://scrapvault.netlify.app/)
-
-**A creative and interactive platform to preserve memories, design scrapbook pages, and collaborate in real time.**
+A creative and interactive web application that allows users to create personalized digital scrapbook pages, customize designs, and preserve memories.
 
 ## 🚀 Features
 
-✅ **Custom Stickers & Doodles** – Personalize your scrapbook with creative elements.
-✅ **Cloud Storage** – Securely save and access your scrapbook from anywhere.
-✅ **Templates & Themes** – Pre-designed layouts to get started quickly.
-
----
+- **Interactive Scrapbook Editor** – Create and customize scrapbook pages using text, images, and emojis.
+- **Personalized Designs** – Add and arrange creative elements to design unique scrapbook layouts.
+- **User Authentication** – Supports user login functionality.
+- **Save and Retrieve Scrapbooks** – Save scrapbook designs and access previously created content.
+- **Scrapbook Management** – View and reopen saved scrapbook designs.
+- **PNG Export** – Export scrapbook creations as images.
 
 ## 🛠 Tech Stack
 
-### **Frontend:**
-- **HTML**
-- **Tailwind CSS** 
-- **JS**
+### Frontend
+- HTML
+- Tailwind CSS
+- JavaScript
 
-### **Backend:**
-- **Node.js**
-- **=Firebase** 
+### Backend
+- Node.js
+- Express.js
 
-### **Deployment:**
-- **Frontend:** Vercel / Netlify
-- **Backend:** Railway / Render
-- **Database:** MongoDB Atlas / Firebase Firestore
+### Data Storage
+- JSON-based file storage
+- Node.js File System (fs)
 
----
+### Deployment
+- Frontend: Netlify
 
 ## 🏗 Installation & Setup
 
+### Clone the repository
+
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/digital-scrapbook.git
-cd digital-scrapbook
+git clone https://github.com/Pavithra-Harish/Digital-Scrapbook-Creator-Web-Application.git
 ```
----
 
+### Navigate to the project directory
 
+```bash
+cd Digital-Scrapbook-Creator-Web-Application
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the application
+
+```bash
+npm start
+```
 
 ## 📸 Screenshots
 
-![Our Team](assets/our%20team.png)
-![Alt text](/assets/image5%20(2).png)
-![Screenshot](assets/screenshot1.png)
-![Alt text](/assets/image5%20(4).png)
+Explore the screenshots below to see the scrapbook editor and application interface.
 
-
----
-```bash
 ## 🤝 Contributing
-1. **Fork** the repository.
-2. **Clone** your forked repo.
-3. Create a new branch: `git checkout -b feature-name`
-4. Commit your changes: `git commit -m "Added a cool feature"`
-5. Push to your fork: `git push origin feature-name`
-6. Open a **Pull Request**!
-```
----
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Clone your fork.
+3. Create a new branch.
+4. Commit your changes.
+5. Push your branch.
+6. Open a Pull Request.
 
 ## 📜 License
-This project is **open-source** under the MIT License.
 
----
-
+This project is licensed under the MIT License.
